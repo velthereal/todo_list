@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Linda's To-Do List App</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<section class="heading">
+				<h1>My to-do list</h1>
+				<span class="pencil">
+					<i class="fa-solid fa-pencil"></i>
+				</span>
+			</section>
+			<section class="list">
+				<input id="inputText" type="text" placeholder="Add New Todo">
+				<p class="listItem">
+					<span class="delete">
+						<i class="fa-solid fa-trash-can"></i>
+					</span>
+					<span class="text">
+						Go to the salon
+					</span>
+				</p>
+				<div class="buttons">
+					<button>Save</button>
+					<button>Clear</button>
+					<button id="tips">Tips</button>
+				</div>
+			</section>
+		</div>
+		<div class="modalWindow">
+			<span class="close">x</span>
+			<article>
+				<p>
+					Click on the pencil to hide or show input area
+				</p>
+				<p>
+					Type text into input area and press enter to add todo to list
+				</p>
+				<p>
+					Hover over the todo and click the on trash can to delete
+				</p>
+				<p>
+					Click the clear button to clear all todos from list
+				</p>
+				<p>
+					Click the Save button to save your todos to access them later even if you exit the browser
+				</p>
+			</article>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
