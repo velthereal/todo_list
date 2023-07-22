@@ -63,11 +63,15 @@ h1 {
 	font-size: 20px;
 	color: #6b6b6c;
 	font-family: 'Bad Script', cursive;
-	text-decoration: line-through;
+	text-decoration: none;
 	position: relative;
 }
+.listItem:nth-of-type(odd){
+	background-color: #f7f7f7;
+}
 .listItemClick {
-	text-decoration: none;
+	text-decoration: line-through;
+	color: #6b6b6c;
 }
 .text {
 	transition: margin-left 0.5s; 
@@ -143,6 +147,18 @@ h1 {
 	font-size: 40px;
 }
 
+.important {
+	position: absolute;
+	right: 40px;
+	color: tomato;
+	font-size: 0;
+	transition: 0.5s;
+}
+
+.listItem:hover .important {
+	font-size: 30px;
+}
+
 .showModalWindow {
 	height: 100vh;
 }
@@ -151,4 +167,7 @@ h1 {
 }
 .no-decoration{
 	text-decoration: none;
+}
+.important-bg {
+	color: tomato;
 }
